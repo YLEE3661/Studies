@@ -1,1 +1,88 @@
+\documentclass{amsart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amscd}
+\usepackage[all,knot,arc]{xy}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{braids}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage[plainpages]{hyperref}
 
+\newtheorem{theorem}{Theorem}[section] 
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proposition}[theorem]{Proposition} 
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{example}[theorem]{Example} 
+\newtheorem{problem}[theorem]{Problem} 
+\newtheorem{question}[theorem]{Question}                                                                 
+\newtheorem{note}[theorem]{Note}
+
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{ack}{Acknowledgements}
+
+\numberwithin{equation}{section}
+
+\numberwithin{figure}{section}
+
+\newcounter{first}
+\newenvironment{papers}
+{%
+ \begin{list}
+       {(\thefirst)}
+       {\usecounter{first} \setlength{\leftmargin}{5pt}
+        \setlength{\topsep}{0pt}
+        \setlength{\itemsep}{1.5pt}
+       }
+}%
+{\end{list}}
+
+\newif\ifpic
+\picfalse    % no pictures
+\pictrue   % with pictures
+
+\newcommand{\dan}[1]{{\color {purple} #1}}
+
+\newcommand{\A}{\ensuremath{\mathcal A}}
+\newcommand{\B}{\ensuremath{\mathcal B}}
+\newcommand{\cP}{\ensuremath{\mathcal P}}
+\newcommand{\MM}{{\ensuremath{\mathfrak M}}}
+\newcommand{\C}{\ensuremath{\mathbb C}}
+\newcommand{\RR}{\ensuremath{\mathcal R}}
+\newcommand{\CC}{\ensuremath{\mathcal C}}
+\newcommand{\Z}{\ensuremath{\mathbb Z}}
+\newcommand{\PP}{\ensuremath{\mathbb P}}
+\newcommand{\Q}{\ensuremath{\mathbb Q}}
+\newcommand{\bS}{\ensuremath{\mathbb S}}
+\newcommand{\tv}{\operatorname{tv}}
+\newcommand{\Mod}{\operatorname{Mod}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Span}{\operatorname{span}}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{\rm{(\theenumi)}}
+\renewcommand{\k}{\ensuremath{\Bbbk}}
+\renewcommand{\bar}{\overline}
+\renewcommand{\b}[1]{\mathbf{#1}}   
+\newcommand{\PSL}{\operatorname{PSL}}
+\newcommand{\Aff}{\operatorname{Aff}}
+
+\newcommand{\g}{\ensuremath{\mathfrak{g}}}
+\newcommand{\h}{\ensuremath{\mathfrak{h}}}
+\newcommand{\f}{\ensuremath{\mathfrak{f}}}
+
+\DeclareMathOperator{\Conf}{Conf}
+
+
+\begin{document}
+\section{Chapter 1}
+
+\end{document} 
